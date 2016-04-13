@@ -1,14 +1,14 @@
 package main
 
 import (
-	 "fmt"
-	 "bufio"
-	 "io/ioutil"
-	 "os"
+	"bufio"
+	"fmt"
+	"io/ioutil"
+	"os"
 )
 
 func main() {
-	path := "data/elks" //Set the path of the files
+	path := "data" // Aloways look in 'data'
 	files := LoadFiles(path)
 	data := ExtractData(path, files)
 	ExportData(data)
