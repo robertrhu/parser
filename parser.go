@@ -13,6 +13,7 @@ func main() {
 	data := ExtractData(path, files)
 	ExportData(data)
 }
+
 func LoadFiles(path string) []os.FileInfo {
 	files, err := ioutil.ReadDir(path)
 	if err != nil {
